@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa%7CRighteous');
+
+body {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgYblxAjIJK8ya9Pi0C87__xlpUSAIW1DD1o52owplY4jrAyCwNq4gYg8QcITysxqIntU&usqp=CAU);
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 90vw;
+  height: 80vh;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  background: transparent;
+  margin:0;
+  margin-bottom: .5em;
+  padding: 1em;
+  text-align: center;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+  text-shadow: blue;
+  font-size: 1.8em;
+  background: transparent;
+}
+
+a:hover {
+  color: ghostwhite;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: goldenrod;
+  text-shadow: aliceblue;
+}
+
+input[type=text] {
+  padding: .4em;
+}
+
+input[type=submit] {
+  padding: .3em;
+  color:rgba(0, 0, 0, 0.358);
+  background: goldenrod;
+  font-size: 2em;
+  text-shadow: 2px;
+  border-radius: 30%;
+}
