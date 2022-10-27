@@ -1,4 +1,13 @@
 {
+  "name": "Faso-Yaar",
+  "version": "0.5.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon"
+  },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -9,3 +18,4 @@
     "react-dom": "^18.2.0"
   }
 }
+

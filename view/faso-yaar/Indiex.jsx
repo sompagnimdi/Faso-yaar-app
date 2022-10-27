@@ -3,28 +3,28 @@ const Default = require('../layouts/Default.jsx')
 
 class Index extends React.Component {
   render () {
-    const { pokemons } = this.props
+    const { faso-yaars } = this.props
     return (
-      <Default title='Pokemons Index Page'>
+      <Default title='Faso-yaars Index Page'>
         <ul>
           {
-                        pokemons.map((pokemon) => {
-                          const { name, strength, isStronger, _id } = pokemon
+                        faso-yaars.map((faso-yaar) => {
+                          const { name, price, isCheaper, _id } = faso-yaar
                           return (
                             <li key={_id}>
-                              <a href={`/logs/${_id}`}>
+                              <a href={`/faso-yaars/${_id}`}>
                                 {name}
-                              </a> is {strength}
+                              </a> is {price}
 
                               <br />
                               {
-                                        isStronger
-                                          ? 'It\'s stronger'
-                                          : 'It\'s not stronger'
+                                        isCheaper
+                                          ? 'It\'s cheaper'
+                                          : 'It\'s not cheaper'
                                     }
                               <br />
-                              <form method='POST' action={`/pokemons/${_id}?_method=DELETE`}>
-                                <input type='submit' value={`Delete ${strength} ${name}`} />
+                              <form method='POST' action={`/faso-yaars/${_id}?_method=DELETE`}>
+                                <input type='submit' value={`Delete ${price} ${name}`} />
                               </form>
                             </li>
                           )
@@ -37,3 +37,4 @@ class Index extends React.Component {
 }
 
 module.exports = Index
+

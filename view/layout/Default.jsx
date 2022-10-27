@@ -6,12 +6,12 @@ class Default extends React.Component {
       <html>
         <head>
           <link rel='stylesheet' href='/css/app.css' />
-          <title>Pokemon</title>
+          <title>Faso-yaar</title>
         </head>
         <body>
           <nav>
-            <a href='/pokemons'>Go to Home Page For Pokemons</a>
-            <a href='/pokemons/new'>Create a New Pokemon</a>
+            <a href='/faso-yaars'>Go to Home Page For Faso-yaars</a>
+            <a href='/faso-yaars/new'>Create a New Faso-yaar</a>
           </nav>
           <h1>
             {this.props.title}
@@ -25,3 +25,4 @@ class Default extends React.Component {
 }
 
 module.exports = Default
+

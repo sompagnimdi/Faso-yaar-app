@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa%7CRighteous');
 
 body {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgYblxAjIJK8ya9Pi0C87__xlpUSAIW1DD1o52owplY4jrAyCwNq4gYg8QcITysxqIntU&usqp=CAU);
+  background: url(https://www.unesco.org/sites/default/files/countries/BF.svg);
   margin: 0;
   font-family: 'Comfortaa', cursive;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ li {
 
 li a {
   color: goldenrod;
-  text-shadow: aliceblue;
+  text-shadow: white;
 }
 
 input[type=text] {
@@ -48,7 +48,7 @@ input[type=text] {
 input[type=submit] {
   padding: .3em;
   color:rgba(0, 0, 0, 0.358);
-  background: goldenrod;
+  background: yellow;
   font-size: 2em;
   text-shadow: 2px;
   border-radius: 30%;
