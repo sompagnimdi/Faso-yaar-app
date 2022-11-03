@@ -1,26 +1,27 @@
-const RESOURCE_PATH = '/Faso-yaars'
+const RESOURCE_PATH = '/items'
 
 const viewController = {
   index (req, res, next) {
-    res.render('faso-yaars/Index', res.locals.data)
+    res.render('items/Index', res.locals.data)
   },
   newView (req, res, next) {
-    res.render('faso-yaars/New')
+    res.render('items/New')
   },
   edit (req, res, next) {
-    res.render('faso-yaars/Edit', res.locals.data)
+    res.render('items/Edit', res.locals.data)
   },
   show (req, res, next) {
-    res.render('faso-yaars/Show', res.locals.data)
+    res.render('items/Show', res.locals.data)
   },
   redirectHome (req, res, next) {
     res.redirect(RESOURCE_PATH)
   },
   redirectShow (req, res, next) {
-    const fasoyaarId = req.params.id || res.locals.data.faso-yaar._id
-    res.redirect(`${RESOURCE_PATH}/${faso-yaarId}`)
+    const itemId = req.params.id || res.locals.data.item._id
+    res.redirect(`${RESOURCE_PATH}/${itemId}`)
   }
 
 }
 
 module.exports = viewController
+

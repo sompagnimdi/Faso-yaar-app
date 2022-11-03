@@ -1,57 +1,57 @@
-
-const Fasoyaar = require('../models/faso-yaar.js')
+const Item = require('../models/item')
 
 const dataController = {
   // Index,
   index (req, res, next) {
-    Faso-yaar.find({}, (err, foundFaso-yaars) => {
+    Item.find({ username: req.session.username }, (err, foundItems) => {
       if (err) {
         res.status(400).send({
           msg: err.message
         })
       } else {
-        res.locals.data.faso-yaars = foundFaso-yaars
+        res.locals.data.items = foundItems
         next()
       }
     })
   },
   // Destroy
   destroy (req, res, next) {
-    Faso-yaar.findByIdAndDelete(req.params.id, (err, deletedFaso-yaar) => {
+    Fruit.findByIdAndDelete(req.params.id, (err, deletedItem) => {
       if (err) {
         res.status(400).send({
           msg: err.message
         })
       } else {
-        res.locals.data.Faso-yaar = deletedFaso-yaar
+        res.locals.data.item = deletedItem
         next()
       }
     })
   },
   // Update
   update (req, res, next) {
-    req.body.IsCheaperer = req.body.IsCheaperer === 'on'
-    Faso-yaar.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedFaso-yaar) => {
+    req.body.isOnSalle = req.body.isOnSalle === 'on'
+    Item.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedItem) => {
       if (err) {
         res.status(400).send({
           msg: err.message
         })
       } else {
-        res.locals.data.faso-yaar = updatedFaso-yaar
+        res.locals.data.Item = updatedItem
         next()
       }
     })
   },
   // Create
   create (req, res, next) {
-    req.body.IsCheaperer = req.body.IsCheaper === 'on'
-    Faso-yaar.create(req.body, (err, createdFaso-yaar) => {
+    req.body.isOnSalle = req.body.isOnSalle === 'on'
+    req.body.username = req.session.username
+    Item.create(req.body, (err, createdItem) => {
       if (err) {
         res.status(400).send({
           msg: err.message
         })
       } else {
-        res.locals.data.faso-yaar = createdFaso-yaar
+        res.locals.data.item = createdItem
         next()
       }
     })
@@ -59,14 +59,14 @@ const dataController = {
   // Edit
   // Show
   show (req, res, next) {
-    Faso-yaar.findById(req.params.id, (err, foundFaso-yaar) => {
+    Fruit.findById(req.params.id, (err, foundItem) => {
       if (err) {
         res.status(404).send({
           msg: err.message,
-          output: 'Could not find a faso-yaar with that ID'
+          output: 'Could not find a item with that ID'
         })
       } else {
-        res.locals.data.faso-yaar = foundfaso-yaar
+        res.locals.data.item = foundItem
         next()
       }
     })
