@@ -4,12 +4,13 @@ const Default = require('../layouts/Default.jsx')
 class Index extends React.Component {
   render () {
     const { items } = this.props
+    console.log(items)
     return (
       <Default title='Items Index Page'>
         <ul>
           {
                         items.map((item) => {
-                          const { name, price, isOnSalle, _id } = Item
+                          const { name, price, isOnSalle, _id } = item
                           return (
                             <li key={_id}>
                               <a href={`/items/${_id}`}>
@@ -18,7 +19,7 @@ class Index extends React.Component {
 
                               <br />
                               {
-                                        isCheaper
+                                        isOnSalle
                                           ? 'It\'s on salle'
                                           : 'It\'s not on salle'
                                     }

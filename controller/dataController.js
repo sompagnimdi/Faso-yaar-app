@@ -16,7 +16,7 @@ const dataController = {
   },
   // Destroy
   destroy (req, res, next) {
-    Fruit.findByIdAndDelete(req.params.id, (err, deletedItem) => {
+    Item.findByIdAndDelete(req.params.id, (err, deletedItem) => {
       if (err) {
         res.status(400).send({
           msg: err.message
@@ -59,7 +59,7 @@ const dataController = {
   // Edit
   // Show
   show (req, res, next) {
-    Fruit.findById(req.params.id, (err, foundItem) => {
+    Item.findById(req.params.id, (err, foundItem) => {
       if (err) {
         res.status(404).send({
           msg: err.message,

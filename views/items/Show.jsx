@@ -3,7 +3,7 @@ const Default = require('../layouts/Default.jsx')
 
 class Show extends React.Component {
   render () {
-    const { name, price, image, iscjeaperer, _id } = this.props.item
+    const { name, price, image, isOnSalle, _id } = this.props.item
     const capName = name[0].toUpperCase() + name.substring(1)
     return (
       <>

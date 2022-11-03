@@ -39,7 +39,7 @@ app.use('/user', require('./controller/authController'))
 /* END Middleware */
 
 // Tell the app to listen on a port
-app.listen(3015, () => {
-  console.log('Listening on Port 3015')
+app.listen(3000, () => {
+  console.log('Listening on Port 3000')
 })
 
