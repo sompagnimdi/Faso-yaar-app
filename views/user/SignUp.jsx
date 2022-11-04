@@ -12,7 +12,7 @@ class SignUp extends React.Component {
             <label>USERNAME: <input type='text' name='username' required /> </label>
             <label>PASSWORD: <input type='password' name='password' required />
             </label>
-            <input type='submit' value='Create Account' />
+            <button id='signup-btn' type='submit'>SignUp</button>
           </fieldset>
         </form>
       </Default>

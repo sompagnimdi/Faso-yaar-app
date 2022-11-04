@@ -17,7 +17,7 @@ class Index extends React.Component {
                                 {name}
                               </a> is {price}
 
-                              <br />
+                              <br/>
                               {
                                         isOnSalle
                                           ? 'It\'s on salle'

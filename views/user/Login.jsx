@@ -12,7 +12,7 @@ class Login extends React.Component {
             <label>USERNAME: <input type='text' name='username' required /> </label>
             <label>PASSWORD: <input type='password' name='password' required />
             </label>
-            <input type='submit' value='Login Account' />
+            <button id='logIn-btn' type='submit'>login</button>
           </fieldset>
         </form>
       </Default>
