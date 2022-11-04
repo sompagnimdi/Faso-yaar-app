@@ -2,7 +2,7 @@
 
 
 body {
-  background:gray;
+  background: dimgray;
   margin: 0;
   font-family: 'Comfortaa';
   background-repeat: no-repeat;
@@ -20,10 +20,9 @@ h1 {
 }
 
 a {
-  color:black;
+  color: aliceblue;
   text-decoration: none;
-  text-shadow: blue;
-  font-size: 1.8em;
+  font-size: 25px;
   background: transparent;
 }
 
@@ -36,7 +35,7 @@ li {
 }
 
 li a {
-  color: goldenrod;
+  color: cadetblue;
   text-shadow: white;
 }
 
@@ -47,7 +46,7 @@ input[type=text] {
 input[type=submit] {
   padding: 20px;
   color: aliceblue;
-  background: green;
+  background:olive;
   font-size: 20px;
   text-shadow: 5px;
   border-radius: 35%;
@@ -55,22 +54,34 @@ input[type=submit] {
 
 .nav{
   padding: 15px;
-  background: blue;
+  background:cadetblue;
   width: 100%;
 }
 
 .nav-link{
   margin-left: 20px;
-  margin-right: 40px;
-  color: aliceblue;
+  margin-right: 20px;
+  color: #2c2c64;
+  font-weight: bolder;
 }
 
 .nav-link:hover{
-color: khaki;
+color:whitesmoke;
+}
+
+#fieldset{
+  background: slategrey;
 }
 
 .signup{
   margin-right: 25px;
+  color: #2c2c64;
+  font-weight: bolder;
+}
+
+.login{
+  color: #2c2c64;
+  font-weight: bolder;
 }
 
 .nav .box-right{
@@ -79,10 +90,10 @@ color: khaki;
 }
 
 #signup-btn{
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 8px 20px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #page-title{
@@ -90,5 +101,11 @@ color: khaki;
 }
 
 #box-page{
-  background: green;
+  background: #2c2c64;
+  width: 100%;
+}
+
+.place-holder{
+  margin-left: 50rem;
+  margin-right: 30px;
 }

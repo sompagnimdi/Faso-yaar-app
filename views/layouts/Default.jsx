@@ -12,8 +12,12 @@ class Default extends React.Component {
         </head>
         <body>
           <nav className='nav'>
-            <a className='nav-link' href='/items'>Go to Home Page For items</a>
-            <a className='nav-link' href='/items/new'>Create a New item</a>
+            <a className='nav-link' href='/items'>Home</a>
+            <a className='nav-link' href='/items/new'>Departments</a>
+            <a className='nav-link' href='/items'>My Items</a>
+            <a className='nav-link' href='/items/new'>Available Coupon</a>
+            <input placeholder='search here ...'className='place-holder'/>
+            
             {item ? <a className='nav-link' href={`/items/${item._id}/edit`}> {item.name} Edit Page </a> : ''}
             {item ? <a className='nav-link' href={`/items/${item._id}`}>{item.name} Show Page</a> : ''}
             <span className='box-right'>

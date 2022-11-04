@@ -7,11 +7,9 @@ class Login extends React.Component {
     return (
       <Default title="Login to Faso Yaar Account">
         <form action='/user/login' method='POST'>
-          <fieldset>
-            <legend>New User</legend>
+          <fieldset id='fieeldset'>
             <label>USERNAME: <input type='text' name='username' required /> </label>
-            <label>PASSWORD: <input type='password' name='password' required />
-            </label>
+            <label>PASSWORD: <input type='password' name='password' required /> </label>
             <button id='logIn-btn' type='submit'>login</button>
           </fieldset>
         </form>

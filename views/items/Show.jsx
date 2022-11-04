@@ -9,7 +9,7 @@ class Show extends React.Component {
       <>
         <h1> {capName} Show Page </h1>
         <nav>
-          <a href='/items'>Back To Faso-yaar Home</a>
+          <a href='/items'>Home</a>
           <a href={`/items/${_id}/edit`}>{`Edit the ${capName}`}</a>
         </nav>
         <p>{capName} is {price} and {isOnSalle ? 'it\'s on Salle' : 'it\'s on Salle'}</p>
