@@ -30,6 +30,10 @@ In this box, the user can just search anything they are looking for in the store
 
 [Trello link](https://trello.com/b/XMehLtkv/faso-yaar-app)
 
+![ERD](https://ga-students.slack.com/files/U03NWNXG7P0/F049QNVD4UU/20221105_115811.jpg)
+
+![image](image.png)
+
 ### test
 
 
