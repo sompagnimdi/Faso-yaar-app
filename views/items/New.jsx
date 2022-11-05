@@ -13,7 +13,7 @@ class New extends React.Component {
           Name: <input type='text' name='name' placeholder='name of New Item Here' /><br />
           Price: <input type='text' name='price' placeholder='name of New Item Here' /><br />
           Images: <input type='text' name='image' placeholder='link to new Item' /><br />
-          Is On Salle: <input type='checkbox' name='isOnSalle' /><br />
+          Not On Salle: <input type='checkbox' name='NotOnSalle' /><br />
           <input type='submit' value='Submit Item' />
         </form>
       </>
