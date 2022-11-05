@@ -28,6 +28,9 @@ In this box, the user can just search anything they are looking for in the store
 
 [We can look up the app here](https://github.com/sompagnimdi/Faso-yaar-app.git)
 
+[Trello link](https://trello.com/b/XMehLtkv/faso-yaar-app)
+
+
 
 
 

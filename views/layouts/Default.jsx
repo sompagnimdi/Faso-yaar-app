@@ -16,7 +16,7 @@ class Default extends React.Component {
             <a className='nav-link' href='/items/new'>Departments</a>
             <a className='nav-link' href='/items'>My Items</a>
             <a className='nav-link' href='/items/new'>Available Coupon</a>
-            <input placeholder='search here ...'className='place-holder'/>
+            <input placeholder='search here ...'/>
             
             {item ? <a className='nav-link' href={`/items/${item._id}/edit`}> {item.name} Edit Page </a> : ''}
             {item ? <a className='nav-link' href={`/items/${item._id}`}>{item.name} Show Page</a> : ''}

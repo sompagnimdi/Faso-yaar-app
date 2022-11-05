@@ -1,7 +1,6 @@
 const React = require('react')
 const Default = require('../layouts/Default')
 
-
 class SignUp extends React.Component {
   render () {
     return (
